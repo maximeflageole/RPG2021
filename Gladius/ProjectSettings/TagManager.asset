@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Characters
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Environment
+    uniqueID: 3121148225
+    locked: 0
+  - name: Interactibles
+    uniqueID: 3373840813
+    locked: 0
+  - name: CharactersBase
+    uniqueID: 1904309121
+    locked: 0
+  - name: Characters
+    uniqueID: 685828377
+    locked: 0
+  - name: CharactersTop
+    uniqueID: 3993914003
     locked: 0

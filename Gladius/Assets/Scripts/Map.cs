@@ -39,8 +39,8 @@ public class Map : MonoBehaviour
                     var vec2 = new Vector2Int(i, j);
                     m_availableTiles.Add(new Vector2Int(i, j), tile);
                     tile.Init(m_obstaclesTilemap.HasTile(pos), vec2);
-                    if (!m_obstaclesTilemap.HasTile(pos))
-                    Debug.Log("pos " + pos);
+                    //if (!m_obstaclesTilemap.HasTile(pos))
+                    //Debug.Log("pos " + pos);
                 }
             }
         }

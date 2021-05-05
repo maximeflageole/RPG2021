@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Tile : MonoBehaviour
@@ -17,5 +15,13 @@ public class Tile : MonoBehaviour
         m_pos = pos;
         m_defaultTile.enabled = !obstructed;
         m_obstructedTile.enabled = obstructed;
+    }
+
+    public void AssignUnit(Unit unit = null)
+    {
+        var occupied = unit != null;
+        IsOccupied = occupied;
+        m_defaultTile.enabled = !occupied;
+        m_obstructedTile.enabled = occupied;
     }
 }
