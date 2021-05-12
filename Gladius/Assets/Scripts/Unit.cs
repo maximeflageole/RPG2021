@@ -28,11 +28,6 @@ public class Unit : MonoBehaviour
         }
     }
 
-    protected void OnMouseDown()
-    {
-        GameMaster.Intance.SelectUnit(this);
-    }
-
     protected void MoveAtTile(Tile tile)
     {
         m_currentTile?.AssignUnit(null);
