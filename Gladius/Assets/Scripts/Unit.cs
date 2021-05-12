@@ -4,6 +4,7 @@ public class Unit : MonoBehaviour
 {
     [SerializeField] protected SpriteRenderer m_selectionSpriteRenderer;
     [SerializeField] protected Vector2Int m_initialPos;
+    [SerializeField] protected int m_range = 2;
 
     protected bool m_isSelected;
     protected Tile m_currentTile;
@@ -26,6 +27,7 @@ public class Unit : MonoBehaviour
         {
             m_selectionSpriteRenderer.enabled = isSelected;
         }
+        if (isSelected) Map.Instance.DisplayRange(m_currentTile, m_range);
     }
 
     protected void MoveAtTile(Tile tile)

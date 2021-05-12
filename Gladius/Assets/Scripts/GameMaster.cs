@@ -45,6 +45,7 @@ public class GameMaster : MonoBehaviour
 
     private void UnselectUnit()
     {
+        Map.Instance.HideRange();
         SelectedUnit?.OnSelected(false);
         SelectedUnit = null;
     }
